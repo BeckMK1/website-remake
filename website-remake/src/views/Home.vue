@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <ImageSlider/>
   </div>
 </template>
@@ -18,6 +17,9 @@ export default {
 </script>
 <style>
 .home{
-background:#f2f2f2 ;
+background:white ;
+margin: auto;
+margin-left: 200px;
+margin-right: 200px;
 }
 </style>
