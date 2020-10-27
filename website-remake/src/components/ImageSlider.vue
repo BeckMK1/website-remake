@@ -4,9 +4,9 @@
         <div>
         <img :src="images[Math.abs(currentNumber) % images.length]" />
         </div>
-        <div class="arrows">
-        <a class="prev" @click="prev" href="#">&#10094;</a>
-        <a class="next" @click="next" href="#">&#10095;</a>
+        <div class="slider-container__arrows">
+        <a class="slider-container__arrows__prev" @click="prev" href="#">&#10094;</a>
+        <a class="slider-container__arrows__next" @click="next" href="#">&#10095;</a>
         </div>
       </div>
   </div>
@@ -48,19 +48,34 @@ methods: {
 <style scoped>
 .slider-container{
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: start;
+  margin-bottom: 64px;
+  margin-top: 26px;
+  padding-top: 26px;
+margin-left: 26px;
+
+
 }
- .arrows{
-    position: fixed;
+ .slider-container__arrows{
+    position: absolute;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 570px;
+    justify-content: start;
  }
-.arrows a{
-  margin-right: 260px;
-  margin-left: 260px;
+.slider-container__arrows :nth-child(1){
+  margin-right: auto;
   text-decoration: none;
   color: white;
+  position: relative;
+  left: 15px;
+}
+.slider-container__arrows :nth-child(2){
+   margin-left:auto;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  right: 15px;
+
 }
 </style>

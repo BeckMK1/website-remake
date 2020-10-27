@@ -1,17 +1,20 @@
 <template>
   <div class="home">
     <ImageSlider/>
+    <News/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import ImageSlider from '@/components/ImageSlider.vue'
+import News from '@/components/News.vue'
 
 export default {
   name: 'Home',
   components: {
-    ImageSlider
+    ImageSlider,
+    News
   }
 }
 </script>
@@ -19,7 +22,6 @@ export default {
 .home{
 background:white ;
 margin: auto;
-margin-left: 200px;
-margin-right: 200px;
+width: calc(570px + 300px);
 }
 </style>
