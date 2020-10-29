@@ -46,16 +46,16 @@ methods: {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.Image-slider{
+width: 70%;
+}
 .slider-container{
   display: flex;
   align-items: center;
   justify-content: start;
   margin-bottom: 64px;
   margin-top: 26px;
-  padding-top: 26px;
-margin-left: 26px;
-
-
+  margin-left: 26px;
 }
  .slider-container__arrows{
     position: absolute;

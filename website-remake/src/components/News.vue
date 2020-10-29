@@ -56,13 +56,16 @@
 
 <style scoped>
 .news{
+width: 70%;
+}
+.news{
 display: flex;
 height: 1000px;
 margin-left: 26px;
 }
 .news-container > h2{
     text-align: start;
-    border-bottom: solid black 1px;
+    border-bottom: solid #dddddd 2px;
 
 }
 .news-container{
